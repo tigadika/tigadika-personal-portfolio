@@ -1,19 +1,8 @@
-import { useEffect, useRef, useState } from "react";
-import {
-  Stage,
-  Layer,
-  Star,
-  Text,
-  Shape,
-  Group,
-  Line,
-  Rect,
-} from "react-konva";
-import { Html } from "react-konva-utils";
+import { useState } from "react";
+import { Stage, Layer, Star, Text, Group } from "react-konva";
 import FileShape from "./ui/FileShape";
 import { PAST_PROJECTS, PastProject as PastProjectType } from "./data";
 import WindowContent from "./ui/WindowContent";
-import Konva from "konva";
 import WindowContentMobile from "./ui/WindowContentMobile";
 
 const dataProjects = PAST_PROJECTS;
