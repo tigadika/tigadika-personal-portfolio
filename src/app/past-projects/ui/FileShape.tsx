@@ -4,12 +4,21 @@ import { PastProject } from "../data";
 export default function FileShape({
   i,
   project,
+  addOpenedProjects,
 }: {
   i: number;
   project: PastProject;
+  addOpenedProjects: (project: PastProject) => void;
 }) {
   return (
-    <Group draggable x={20} y={i * 150 + 20}>
+    <Group
+      draggable
+      x={100}
+      y={i * 150 + 20}
+      onDblClick={() => {
+        addOpenedProjects(project);
+      }}
+    >
       <Shape
         width={100}
         height={100}

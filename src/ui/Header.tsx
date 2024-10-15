@@ -3,7 +3,7 @@ import ReactSvg from "../assets/react-svgrepo-com.svg";
 import NextSvg from "../assets/nextjs-fill-svgrepo-com.svg";
 import TsSvg from "../assets/typescript-official-svgrepo-com.svg";
 import Tailwind from "../assets/tailwind-svgrepo-com.svg";
-import { ArrowDownRight } from "lucide-react";
+import { LuArrowDownRight } from "react-icons/lu";
 
 export default function Header() {
   return (
@@ -30,7 +30,7 @@ export default function Header() {
             }
           >
             <p>Check My Work</p>
-            <ArrowDownRight />
+            <LuArrowDownRight className="text-2xl" />
           </button>
         </div>
         <div className="relative flex items-center justify-center">

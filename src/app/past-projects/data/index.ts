@@ -31,7 +31,7 @@ export const PAST_PROJECTS: PastProject[] = [
     name: "FSJS Tools",
     description:
       "FSJS Tools is an application designed to streamline operational processes at Hacktiv8, such as scheduling, attendance tracking, announcements, coding time checks, and student grading, with automatic integration into Discord, Google Sheets, and the student portal database.\n\n- Tech Stack: Built using React, Tailwind CSS, TanStack Query, TanStack Table, TanStack Router, and Redux for state management.\n- Auto-Scheduling Feature: Includes Cron-based auto-scheduling, where the application sends pre-hit Zoom links to a specific Discord channel one hour before the class starts.\n\nThis tool has significantly optimized daily operations by automating various tasks and improving data accessibility.",
-    imgUrl: "project1.png",
+    imgUrl: "project2.jpg",
     tags: [
       "React",
       "Redux",
