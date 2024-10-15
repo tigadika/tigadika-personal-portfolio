@@ -9,17 +9,19 @@ import { SiStackblitz } from "react-icons/si";
 export default function Footer() {
   return (
     <div className="flex h-fit justify-center bg-lime-300">
-      <div className="container grid grid-cols-3">
-        <img
-          src="/tigadika-logo-black.png"
-          alt="tigadika logo"
-          className="w-64"
-        />
+      <div className="container grid grid-cols-1 lg:grid-cols-3">
+        <a href="#header" className="mx-auto lg:mx-0">
+          <img
+            src="/tigadika-logo-black.png"
+            alt="tigadika logo"
+            className="w-64"
+          />
+        </a>
         <div className="flex flex-col items-center justify-center">
           <p className="font-mono text-sm">Made with ❤️ by Radhea Amardika</p>
           <p className="font-mono text-xs">Bandung, West Java, Indonesia</p>
         </div>
-        <div className="flex items-center justify-end gap-5">
+        <div className="flex items-center justify-center gap-5 py-10 lg:justify-end lg:py-0">
           <a href="https://www.linkedin.com/in/radheafaradha/" target="_blank">
             <FaLinkedin className="text-3xl hover:text-rose-500" />
           </a>

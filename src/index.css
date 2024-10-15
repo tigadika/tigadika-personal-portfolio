@@ -15,6 +15,8 @@
   /**/
   /*other default setting ...*/
   /**/
+  scroll-behavior: smooth;
+
   --secondary-glow: conic-gradient(
     from 10deg at 50% 50%,
     #eb7494 0deg,

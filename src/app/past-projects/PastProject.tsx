@@ -14,6 +14,7 @@ import FileShape from "./ui/FileShape";
 import { PAST_PROJECTS, PastProject as PastProjectType } from "./data";
 import WindowContent from "./ui/WindowContent";
 import Konva from "konva";
+import WindowContentMobile from "./ui/WindowContentMobile";
 
 const dataProjects = PAST_PROJECTS;
 
@@ -25,12 +26,20 @@ const PastProject = ({
   const [openedProject, setOpenedProject] = useState<PastProjectType | null>(
     null,
   );
+  const [openedProjectMobile, setOpenedProjectMobile] =
+    useState<PastProjectType | null>(null);
 
   const addOpenedProjects = (project: PastProjectType) => {
     setOpenedProject(project);
   };
   const closeOpenedProject = () => {
     setOpenedProject(null);
+  };
+  const addOpenedProjectsMobile = (project: PastProjectType) => {
+    setOpenedProjectMobile(project);
+  };
+  const closeOpenedProjectMobile = () => {
+    setOpenedProjectMobile(null);
   };
 
   return (
@@ -43,13 +52,19 @@ const PastProject = ({
               i={i}
               project={project}
               addOpenedProjects={addOpenedProjects}
+              addOpenedProjectsMobile={addOpenedProjectsMobile}
+              closeOpenedProject={closeOpenedProject}
+              closeOpenedProjectMobile={closeOpenedProjectMobile}
             />
           ))}
         <Group
-          x={dimension.width - 200}
+          x={dimension.width - 150}
           y={dimension.height - 200}
           draggable
           onDblClick={() => {
+            window.open("https://github.com/tigadika", "_blank");
+          }}
+          onTouchEnd={() => {
             window.open("https://github.com/tigadika", "_blank");
           }}
         >
@@ -77,6 +92,13 @@ const PastProject = ({
             dimension={dimension}
             project={openedProject}
             closeOpenedProject={closeOpenedProject}
+          />
+        )}
+        {openedProjectMobile && (
+          <WindowContentMobile
+            dimension={dimension}
+            project={openedProjectMobile}
+            closeOpenedProjectMobile={closeOpenedProjectMobile}
           />
         )}
         {/* {openedProject.length > 0 &&

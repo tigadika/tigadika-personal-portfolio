@@ -5,10 +5,16 @@ export default function FileShape({
   i,
   project,
   addOpenedProjects,
+  addOpenedProjectsMobile,
+  closeOpenedProject,
+  closeOpenedProjectMobile,
 }: {
   i: number;
   project: PastProject;
   addOpenedProjects: (project: PastProject) => void;
+  addOpenedProjectsMobile: (project: PastProject) => void;
+  closeOpenedProject: () => void;
+  closeOpenedProjectMobile: () => void;
 }) {
   return (
     <Group
@@ -17,6 +23,11 @@ export default function FileShape({
       y={i * 150 + 20}
       onDblClick={() => {
         addOpenedProjects(project);
+        closeOpenedProjectMobile();
+      }}
+      onTouchEnd={() => {
+        addOpenedProjectsMobile(project);
+        closeOpenedProject();
       }}
     >
       <Shape

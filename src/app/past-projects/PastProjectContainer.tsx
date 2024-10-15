@@ -36,7 +36,10 @@ export default function PastProjectContainer() {
   }, []);
 
   return (
-    <div className="relative flex h-screen flex-col items-center justify-start gap-5 py-20">
+    <div
+      id="project"
+      className="relative flex h-screen flex-col items-center justify-start gap-5 py-20"
+    >
       <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#80808012_2px,transparent_2px),linear-gradient(to_bottom,#80808012_2px,transparent_2px)] bg-[size:100px_100px]"></div>
       <div className="space-y-2 text-center">
         <h2 className="font-title text-4xl">past project</h2>
