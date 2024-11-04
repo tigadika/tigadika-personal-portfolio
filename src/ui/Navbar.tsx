@@ -28,7 +28,7 @@ export default function Navbar() {
             </li>
           </ul>
           <a
-            href="Radhea_Fullstack_Resume.pdf"
+            href="Radhea_Amardika_Resume_Fullstack.pdf"
             download
             className={cn(
               "flex cursor-pointer items-center rounded-base border-2 border-black bg-rose-500 px-6 py-2 font-mono shadow-light transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none dark:hover:shadow-none",
