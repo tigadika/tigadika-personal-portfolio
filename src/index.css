@@ -34,6 +34,8 @@
     #8bdce0 55deg,
     transparent 360deg
   );
+
+  background-color: rgb(9 9 11);
 }
 
 @keyframes animateBefore {
