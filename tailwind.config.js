@@ -8,8 +8,20 @@ export default {
       animation: {
         blob: "blob 7s infinite",
         updown: "updown 7s infinite",
+        shine: "shine 10s infinite",
       },
       keyframes: {
+        shine: {
+          "0%": {
+            transform: "rotate(25deg) translate(180px, -70px)",
+          },
+          "50%": {
+            transform: "rotate(25deg) translate(-180px)",
+          },
+          "100%": {
+            transform: "rotate(25deg) translate(180px, -70px)",
+          },
+        },
         blob: {
           "0%": {
             transform: "translate(0px, 0px) scale(1)",
