@@ -1,43 +1,38 @@
+import { FaDownload, FaLaptop, FaWebAwesome } from "react-icons/fa6";
 import { cn } from "../lib/utils";
 
 export default function Navbar() {
   return (
     <>
-      <nav className="fixed z-40 flex h-20 w-full items-center justify-center border-b-4 border-black bg-lime-300 px-5 xl:px-0">
-        <div className="container flex items-center justify-between">
-          <a href="#header">
-            <img
-              src="/tigadika-logo-black.png"
-              alt="tigadika logo"
-              className="w-36"
-            />
-          </a>
-          <ul className="hidden gap-8 font-mono tracking-tight sm:flex">
-            <li>
-              <a
-                href="#project"
-                className="hover:font-bold hover:text-rose-500"
-              >
-                Past Project
-              </a>
-            </li>
-            <li>
-              <a href="#exp" className="hover:font-bold hover:text-rose-500">
-                Experience
-              </a>
-            </li>
-          </ul>
+      <div className="fixed bottom-10 left-1/2 z-40 flex w-auto -translate-x-1/2 items-center justify-between rounded-full bg-zinc-900/50 px-6 py-4 text-sm text-zinc-300 shadow-xl backdrop-blur-md md:bottom-auto md:top-10 md:w-2/4">
+        <div className="hidden items-center gap-2 md:flex">
+          <img src="/tigadika-logo.png" alt="" className="h-4" />
+          <h1 className="font-bold text-zinc-300">tigadika</h1>
+        </div>
+        <div className="flex items-center gap-2">
           <a
-            href="Radhea_Amardika_Resume_Fullstack.pdf"
-            download
-            className={cn(
-              "flex cursor-pointer items-center rounded-base border-2 border-black bg-rose-500 px-6 py-2 font-mono shadow-light transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none dark:hover:shadow-none",
-            )}
+            href=""
+            className="flex items-center gap-1 rounded-md border border-zinc-700 px-2 py-1 hover:bg-zinc-600"
           >
-            Download CV
+            <FaWebAwesome />
+            Exp
+          </a>
+          <a
+            href=""
+            className="flex items-center gap-1 rounded-md border border-zinc-700 px-2 py-1 hover:bg-zinc-600"
+          >
+            <FaLaptop />
+            Projects
           </a>
         </div>
-      </nav>
+        <a
+          href=""
+          className="flex items-center gap-1 rounded-md border border-zinc-700 px-2 py-1 hover:bg-zinc-600"
+        >
+          <FaDownload />
+          Resume
+        </a>
+      </div>
     </>
   );
 }

@@ -5,6 +5,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      colors: {
+        "zinc-920": "#141410",
+      },
       animation: {
         blob: "blob 7s infinite",
         updown: "updown 7s infinite",

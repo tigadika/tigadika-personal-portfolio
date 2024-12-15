@@ -11,6 +11,18 @@
   }
 }
 
+@layer components {
+  .mask-transparent {
+    mask-image: linear-gradient(
+      180deg,
+      transparent 0%,
+      #ffffff 50px,
+      #ffffff calc(100% - 50px),
+      transparent 100%
+    );
+  }
+}
+
 :root {
   /**/
   /*other default setting ...*/
