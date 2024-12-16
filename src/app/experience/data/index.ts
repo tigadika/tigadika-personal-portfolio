@@ -8,7 +8,7 @@ export type Experience = {
 export const DATA_EXP: Experience[] = [
   {
     title: "FERN Curriculum Developer & Instructor",
-    time: "June 2024 - Oct 2024",
+    time: "June 2024 - Now",
     company: "Hacktiv8",
     description:
       "Create front end lecture curriculum for bootcamp program. Lecturing React, Next.js, React Native, Deployment, State Management, and other front end tools.",
