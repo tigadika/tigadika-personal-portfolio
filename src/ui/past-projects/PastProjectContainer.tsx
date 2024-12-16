@@ -91,7 +91,7 @@ export default function PastProjectContainer() {
               />
             </motion.div>
             <motion.div
-              className="flex flex-col gap-3 px-6 py-2 text-zinc-200"
+              className="flex w-full flex-col gap-3 px-6 py-2 text-zinc-200"
               layoutId={`project-content-${data.indexOf(openedProject)}`}
               initial={{ opacity: 0, y: -50 }}
               animate={{
@@ -109,9 +109,9 @@ export default function PastProjectContainer() {
               >
                 <FaLink className="inline" /> {openedProject?.links}
               </a>
-              <pre className="block text-pretty text-justify font-sans">
+              <p className="block whitespace-pre-line text-pretty text-justify font-sans">
                 {openedProject?.description}
-              </pre>
+              </p>
               <motion.div className="flex flex-wrap gap-2">
                 {openedProject &&
                   openedProject.tags.map((tag, i) => (
