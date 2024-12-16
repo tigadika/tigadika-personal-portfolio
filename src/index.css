@@ -9,6 +9,24 @@
   .animation-delay-4000 {
     animation-delay: 5s;
   }
+  .scrollbar::-webkit-scrollbar {
+    width: 15px;
+    height: 20px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    background: #1b1b1b;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #3a3a3a;
+    border-radius: 100vh;
+    border: 3px solid #414141;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #464646;
+  }
 }
 
 @layer components {
