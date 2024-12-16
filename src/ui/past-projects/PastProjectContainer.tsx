@@ -189,6 +189,7 @@ function PastProjectModal({
       exit={{ opacity: 0, translateY: -50 }}
       transition={{ duration: 0.2, delay: 0.1, type: "tween" }}
       style={{ transformOrigin: "top" }}
+      id={String(projectIndex)}
       className="scrollbar w-full max-w-xl rounded-lg bg-white shadow-xl backdrop:bg-zinc-900 backdrop:opacity-80"
     >
       <div ref={contentRef} className="modal-content relative bg-zinc-800">

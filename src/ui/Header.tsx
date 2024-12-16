@@ -1,9 +1,3 @@
-import AsteriskSvg from "../assets/asterisk.svg";
-import ReactSvg from "../assets/react-svgrepo-com.svg";
-import NextSvg from "../assets/nextjs-fill-svgrepo-com.svg";
-import TsSvg from "../assets/typescript-official-svgrepo-com.svg";
-import Tailwind from "../assets/tailwind-svgrepo-com.svg";
-import { LuArrowDownRight } from "react-icons/lu";
 import { motion, useMotionValue, useTransform } from "motion/react";
 import { FaGithub } from "react-icons/fa6";
 import CTAButton from "./CTAButton";
