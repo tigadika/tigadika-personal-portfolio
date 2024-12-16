@@ -4,37 +4,27 @@ import { transform } from "typescript";
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    borderRadius: {
-      base: "20px",
-      full: "9999px",
-    },
-    boxShadow: {
-      light: "3px 3px 0px 0px #000",
-      dark: "3px 3px 0px 0px #000",
-      none: "0",
-    },
-    translate: {
-      boxShadowX: "3px",
-      boxShadowY: "3px",
-      reverseBoxShadowX: "-3px",
-      reverseBoxShadowY: "-3px",
-    },
-    fontWeight: {
-      base: "500",
-      heading: "700",
-    },
-    fontFamily: {
-      mono: ["Roboto Mono", "monospace"],
-    },
     extend: {
-      fontFamily: {
-        title: ["Rubik Mono One", "monospace"],
+      colors: {
+        "zinc-920": "#141410",
       },
       animation: {
         blob: "blob 7s infinite",
         updown: "updown 7s infinite",
+        shine: "shine 10s infinite",
       },
       keyframes: {
+        shine: {
+          "0%": {
+            transform: "rotate(25deg) translate(180px, -70px)",
+          },
+          "50%": {
+            transform: "rotate(25deg) translate(-180px)",
+          },
+          "100%": {
+            transform: "rotate(25deg) translate(180px, -70px)",
+          },
+        },
         blob: {
           "0%": {
             transform: "translate(0px, 0px) scale(1)",
