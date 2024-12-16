@@ -1,7 +1,7 @@
 export default function TechStacks() {
   return (
     <>
-      <div className="h-fit">
+      <div className="h-fit" id="techstack">
         <div className="flex flex-col items-center justify-start px-2 py-28">
           <div className="w-fit bg-gradient-to-r from-zinc-300 via-purple-500 to-cyan-500 bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(179,116,240,0.5)]">
             <h2 className="text-pretty text-center text-[2.5rem] font-semibold tracking-tight">

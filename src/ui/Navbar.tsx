@@ -11,14 +11,14 @@ export default function Navbar() {
         </div>
         <div className="flex items-center gap-2">
           <a
-            href=""
+            href="#exp"
             className="flex items-center gap-1 rounded-md border border-zinc-700 px-2 py-1 hover:bg-zinc-600"
           >
             <FaWebAwesome />
             Exp
           </a>
           <a
-            href=""
+            href="#projects"
             className="flex items-center gap-1 rounded-md border border-zinc-700 px-2 py-1 hover:bg-zinc-600"
           >
             <FaLaptop />
@@ -26,7 +26,8 @@ export default function Navbar() {
           </a>
         </div>
         <a
-          href=""
+          href="/Radhea_Amardika_Resume_Fullstack.pdf"
+          download
           className="flex items-center gap-1 rounded-md border border-zinc-700 px-2 py-1 hover:bg-zinc-600"
         >
           <FaDownload />

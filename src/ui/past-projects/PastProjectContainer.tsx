@@ -38,7 +38,10 @@ export default function PastProjectContainer() {
 
   return (
     <>
-      <div className="mb-10 mt-20 flex h-fit items-center justify-center">
+      <div
+        id="projects"
+        className="mb-10 mt-20 flex h-fit items-center justify-center"
+      >
         <div className="w-fit bg-gradient-to-r from-zinc-300 via-purple-500 to-pink-500 bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(179,116,240,0.5)]">
           <h2 className="text-pretty text-center text-[2.5rem] font-semibold tracking-tight">
             Past Projects
@@ -181,10 +184,11 @@ function PastProjectModal({
       onClose={handleClose}
       onKeyDown={handleKeyDown}
       onClick={handleDialogClick}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.2, delay: 0.1 }}
+      initial={{ opacity: 0, translateY: -50 }}
+      animate={{ opacity: 1, translateY: 0 }}
+      exit={{ opacity: 0, translateY: -50 }}
+      transition={{ duration: 0.2, delay: 0.1, type: "tween" }}
+      style={{ transformOrigin: "top" }}
       className="scrollbar w-full max-w-xl rounded-lg bg-white shadow-xl backdrop:bg-zinc-900 backdrop:opacity-80"
     >
       <div ref={contentRef} className="modal-content relative bg-zinc-800">

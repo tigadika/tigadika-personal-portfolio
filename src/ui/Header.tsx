@@ -6,6 +6,7 @@ import Tailwind from "../assets/tailwind-svgrepo-com.svg";
 import { LuArrowDownRight } from "react-icons/lu";
 import { motion, useMotionValue, useTransform } from "motion/react";
 import { FaGithub } from "react-icons/fa6";
+import CTAButton from "./CTAButton";
 
 export default function Header() {
   const cardX = useMotionValue(0);
@@ -58,10 +59,7 @@ export default function Header() {
               </p>
             </div>
             <div className="flex gap-4">
-              <button className="group relative rounded-md border-b border-t border-b-purple-800 border-t-gray-400 bg-gradient-to-br from-teal-500 via-purple-700 to-purple-600 px-4 py-2 text-sm font-semibold text-gray-200 transition duration-500 ease-in-out hover:-translate-y-1">
-                <div className="absolute left-0 top-0 h-full w-full rounded-md bg-gradient-to-b from-zinc-50 to-transparent opacity-30 group-hover:opacity-40"></div>
-                Know me more
-              </button>
+              <CTAButton link="#techstack">Know me more</CTAButton>
               <a
                 href="https://github.com/tigadika"
                 target="_blank"
