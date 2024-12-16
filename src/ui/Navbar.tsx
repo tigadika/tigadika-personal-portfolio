@@ -1,5 +1,4 @@
 import { FaDownload, FaLaptop, FaWebAwesome } from "react-icons/fa6";
-import { cn } from "../lib/utils";
 
 export default function Navbar() {
   return (
